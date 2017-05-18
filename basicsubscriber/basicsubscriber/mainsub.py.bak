@@ -1,5 +1,5 @@
 #Main driver to test the subscriber
-from .subscriber import Subscriber
+from subscriber import Subscriber
 
 #Listen to two publisher
 portlist = ["9292", "9393"]
@@ -25,4 +25,4 @@ print()
 notes = exampleSubscriber.allNotesReceived();
 for topics in notes:
 	for i in range(0, len(notes[topics])):
-		print((topics, notes[topics][i]))   
+		print(topics, notes[topics][i])   

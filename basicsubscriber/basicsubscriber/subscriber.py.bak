@@ -57,7 +57,7 @@ class Subscriber:
 			#Save the notes received
 			self.topiclist[topictitle].append(note)
 			if(self.verbose):
-				print((topictitle, note))
+				print(topictitle, note)
 
 	#To grab all the notes which have already received
 	def allNotesReceived(self):

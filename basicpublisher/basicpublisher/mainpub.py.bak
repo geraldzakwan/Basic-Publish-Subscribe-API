@@ -1,5 +1,5 @@
 #Main driver to test the publisher
-from .publisher import Publisher
+from publisher import Publisher
 import random
 import time
 import sys
@@ -24,7 +24,7 @@ count = 0
 while(count < 5):
     topic = str(random.randrange(1, 6))
     note = str(random.randrange(1,10))
-    print((topic, note))
+    print(topic, note)
     #A delay before next publish
     time.sleep(1)
     examplePublisher.publishNote(topic, note)
